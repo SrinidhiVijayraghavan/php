@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php
+$t = date("H");
+
+if ($t < "20") {
+    echo "choose your favt bike:";
+}
+$favbike = "ktm";
+
+switch ($favbike) {
+    case "r15":
+        echo "Your favorite bike is r15!";
+        break;
+    case "ktm":
+        echo "Your favorite bike is ktm!";
+        break;
+    case "pulsar":
+        echo "Your favorite bike is pulsar!";
+        break;
+    default:
+        echo "Your favorite bike is neither r15, ktm, nor pulsar!";
+}
+        ?>
+    </body>
+</html>
